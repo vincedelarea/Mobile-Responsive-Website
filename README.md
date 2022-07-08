@@ -1,3 +1,3 @@
 # Mobile-Responsive-Website
 
-A mobile responsive website
+Practice in creating mobile responsive website
