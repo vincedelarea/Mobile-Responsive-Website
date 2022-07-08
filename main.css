@@ -1,0 +1,452 @@
+/** 
+
+IMAGE LINKS
+
+vectorbg.png - https://i.ibb.co/99H48Kf/vectorbg.png
+Mirror-Ico-P.png - https://i.ibb.co/mbpWkX7/Mirror-Ico-P.png
+Mirror-Ico-L - https://i.ibb.co/RPw0wQ5/Mirror-Ico-L.png
+Mirror-Ico-S - https://i.ibb.co/8DM7Cm7/Mirror-Ico-S.png
+mirror-sys - https://i.ibb.co/XXRbxZs/mirror-sys.png
+mirror-web - https://i.ibb.co/SRQcjLb/mirror-web.png
+
+**/
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+	font-family: 'Pathway Gothic One', sans-serif;
+	background-color: #f8f8ff;
+	z-index: 10;
+}
+
+hr{
+	width: 180px;
+	height: 3px;
+	margin: auto;
+	margin-top: 10px;
+	border: none;
+	background-color: #24c1e0;
+	margin: 50px auto 50px auto;
+}
+
+/**-----------------
+NAV BAR
+-----------------**/
+#navbar{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	display: inline-block;
+	overflow: hidden;
+	position: absolute;
+}
+
+nav{
+	
+}
+
+
+nav ul li{
+	list-style-type: none;
+	float: right;
+	margin-right: 40px;
+	padding: 20px;
+	opacity: 1;
+}
+
+nav ul li a{
+	text-decoration: none;
+	font-family: Arial, serif;
+	font-size: 20px;
+	font-weight: normal;
+	color: white;
+	text-shadow: grey 1px 2px 2px;
+	text-transform: uppercase;
+	padding: 5px 8px;
+}
+
+.nav_links:hover{
+	border: 2px solid white;
+	border-radius: 5px;
+}
+
+#navicon{
+	position: relative;
+	justify-content: center;
+	text-align: center;
+	float: left;
+}
+
+#li_navbar_icon{
+	justify-content: center;
+	text-align: center;
+	float: left;
+	padding: 10px;
+}
+
+#li_navbar_icon h3{
+	font-size: 30px;
+	color: #f0f0f0;
+	font-family: arial;
+	text-shadow: #616161 2px 2px 3px;
+}
+
+#navbar_icon img{
+	width: 70px;
+	height: auto;
+	float: left;
+	text-align: center;
+}
+
+@media (max-width: 800px){
+	nav ul li{
+		margin-right: 10px;
+	}
+
+	nav ul li a{
+		font-size: 15px;
+	}
+
+	#li_navbar_icon h3{
+		font-size: 15px;
+	}
+
+	#navbar_icon img{
+		width: 40px;
+	}
+}
+
+@media (max-width: 1000px){
+	nav ul li{
+		margin-right: 15px;
+	}
+
+	nav ul li a{
+		font-size: 15px;
+	}
+
+	#li_navbar_icon h3{
+		font-size: 20px;
+	}
+
+	#navbar_icon img{
+		width: 50px;
+	}
+}
+
+@media (min-width: 1400px){
+	nav{
+		width: 70%;
+	}
+
+	#about{
+		width: 60%;
+	}
+}
+
+
+#nav_bars{
+	display: none;
+
+}
+
+@media(max-width: 600px){
+	#nav_bars{
+		color: white;
+		float: right;
+		font-size: 30px;
+	}
+
+	.nav_links{
+		display: none;
+	}
+}
+
+/**-----------------
+COVER
+-----------------**/
+
+#main_bg{
+	background-color: grey;
+	min-height: 100vh;
+	min-width: 100%;
+	background: url("https://i.ibb.co/99H48Kf/vectorbg.png");
+	background-size: cover;
+	background-attachment: fixed;
+	align-items: center;
+	text-align: center;
+	margin: auto;
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+}
+
+#main_bg h1{
+}
+
+@media (max-width: 800px){
+	#main_bg{
+		min-height: 350px;
+	}
+}
+
+#cover_text{
+	
+}
+
+#cover_text .h1_title{
+	font-size: 50px;
+	font-family: 'Newsreader', serif; 
+	color: white;
+	word-spacing: 2px;
+	text-shadow: black 2px 3px 3px;
+}
+
+#cover_text .h3_subtitle{
+	font-size: 30px;
+	font-family: 'Newsreader', serif; 
+	color: white;
+	text-shadow: black 1px 2px 2px;
+}
+
+/**-----------------
+ABOUT
+-----------------**/
+
+#about{
+	align-items: center;
+	text-align: center;
+	max-width: 50%;
+	margin: auto;
+	padding: 60px 40px 0 40px;
+}
+
+#about p{
+	margin-top: 30px;
+}
+
+.sample_paragraph{
+	font-size: 20px;
+	text-indent: 50px;
+	text-align: justify;
+	text-justify: inter-word;
+}
+
+@media(max-width: 800px){
+	#about{
+		padding: 20px 10px 0 10px;
+		max-width: 70%;
+	}
+}
+
+@media(max-width: 600px){
+	#about{
+		padding: 20px 10px 0 10px;
+		max-width: 80%;
+	}
+}
+
+@media(max-width: 1000px){
+	#about{
+		padding: 60px 40px;
+	}
+}
+
+/**-----------------
+SERVICES
+-----------------**/
+
+#services{
+	margin: auto;
+	text-align: center;
+	max-width: 60%;
+	height: auto;
+	padding: 40px 50px;
+	border-radius: 3% 0 3% 0;
+	background: url("https://i.ibb.co/99H48Kf/vectorbg.png");
+	background-size: auto;
+	background-repeat: no-repeat;
+}
+
+#services h1{
+	text-transform: uppercase;
+}
+
+#services p{
+	margin-top: 20px;
+}
+
+.service_con{
+	margin-top: 60px;
+	margin-bottom: 50px;
+	text-decoration: none;
+	display: flex;
+	flex-direction: row;
+}
+
+.service_con img{
+	width: auto;
+}
+
+.services_description{
+	padding: 20px 30px;
+}
+
+.services_description h2{
+	font-family: inherit;
+	margin-top: 10px;
+	text-transform: uppercase;
+}
+
+.services_description p{
+	font-size: 20px;
+}
+
+@media(max-width: 600px){
+	#services{
+		border-radius: 0;
+		padding: 10px 20px;
+		max-width: 100%;
+		background-size: cover;
+	}
+}
+
+@media(max-width: 800px){
+	#services{
+		border-radius: 0;
+		padding: 20px 30px;
+		max-width: 100%;
+		background-size: cover;
+	}
+
+	.service_con img{
+		
+	}
+
+	#services .service_con{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.services_description{
+		padding: 5px 8px;
+	}
+}
+
+@media(max-width: 1000px){
+	#services{
+		background-size: cover;
+	}
+
+	#services .service_con{
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+/**-----------
+Contact
+------------**/
+
+#contact_info{
+	width: 70%;
+	padding: 80px 0 80px 0;
+	justify-content: center;
+	text-align: center;
+	margin: auto;
+}
+
+#contact_info h1{
+	text-transform: uppercase;
+}
+
+#contact_info ul{
+	list-style-type: none;
+	display: flex;
+	flex-basis: 100px;
+	flex-direction: row;
+	margin: auto;
+}
+
+#contact_info ul li{
+	display: flex;
+	flex-direction: row;
+	flex-basis: 200px;
+	margin: auto;
+	padding: 50px 0;
+}
+
+.contact_label{
+	margin: auto;
+	margin-left: 10px;
+	font-size: 20px;
+}
+
+.contact_label p{
+}
+
+@media(max-width: 600px){
+	#contact_info ul{
+		flex-direction: column;
+	}
+
+	.far{
+		font-size: 70px;
+	}
+
+	.fas{
+		font-size: 70px;
+	}
+}
+
+@media(max-width: 800px){
+	#contact_info ul li{
+		flex-direction: column;
+	}
+}
+
+.far{
+	font-size: 50px;
+}
+
+.fas{
+	font-size: 50px;
+}
+
+#email_icon{
+	color: #1bc2a6;
+}
+
+#phone_icon{
+	color: #286bd1;
+}
+
+#location_icon{
+	color: #ad0707;
+}
+
+/**-----------
+FOOTER
+------------**/
+
+footer{
+	width: 100%;
+	padding: 40px 0 0 0;
+	min-height: 140px;
+	background: url("https://i.ibb.co/99H48Kf/vectorbg.png");
+	background-size: auto;
+	align-items: center;
+	text-align: center;
+}
+
+footer h2, h3{
+	font-family: arial;
+	color: white;
+}
